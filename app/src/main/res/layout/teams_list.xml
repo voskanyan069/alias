@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/name_item"
+        android:background="@drawable/list_item_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:fontFamily="@font/fredoka"
+        android:hint="Team name ..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBackground"
+        android:textColorHint="#DDE4E8"
+        />
+
+</LinearLayout>

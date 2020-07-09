@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/lang_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_gravity="right"
+                android:popupBackground="@drawable/spinner_background" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:fontFamily="@font/fredoka"
+                android:textSize="50sp"
+                android:textColor="@color/colorSpinner"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When you play, play hard!"
+                android:fontFamily="@font/fredoka"
+                android:layout_marginLeft="30sp"
+                android:textColor="@color/colorTeamBlock" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/points_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:padding="20sp"
+                    android:text="Points"
+                    android:textColor="@color/colorBackground"
+                    android:layout_gravity="center"
+                    android:textSize="40sp" />
+
+                <Spinner
+                    android:id="@+id/points_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPointsBlock"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:popupBackground="@drawable/points_spinner_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/duration_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:padding="15sp"
+                    android:text="Duration"
+                    android:textColor="@color/colorBackground"
+                    android:layout_gravity="center"
+                    android:textSize="35sp" />
+
+                <Spinner
+                    android:id="@+id/duration_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorDurationBlock"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:popupBackground="@drawable/duration_spinner_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/teams_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:paddingLeft="20sp"
+                    android:text="Teams"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="40sp" />
+
+                <LinearLayout
+                    android:id="@+id/list_of_teams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:fontFamily="@font/fredoka"
+                        android:text="Team 1"
+                        android:textColor="#C6CDD1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/team_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:background="@drawable/list_item_drawable"
+                        android:fontFamily="@font/fredoka"
+                        android:hint="Team name ... 0 - 15"
+                        android:padding="10sp"
+                        android:textColor="@color/colorBackground"
+                        android:textColorHint="#DDE4E8"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:fontFamily="@font/fredoka"
+                        android:text="Team 2"
+                        android:textColor="#C6CDD1"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/team_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="10sp"
+                        android:background="@drawable/list_item_drawable"
+                        android:fontFamily="@font/fredoka"
+                        android:hint="Team name ... 0 - 15"
+                        android:padding="10sp"
+                        android:textColor="@color/colorBackground"
+                        android:textColorHint="#DDE4E8"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40sp"
+                android:layout_marginLeft="100sp"
+                android:layout_marginRight="100sp"
+                android:fontFamily="@font/fredoka"
+                android:background="@drawable/next_button"
+                android:textSize="20sp"
+                android:text="NEXT"
+                android:textColor="@color/colorBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

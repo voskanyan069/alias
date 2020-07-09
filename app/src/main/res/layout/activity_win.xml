@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WinActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/fredoka"
+        android:textColor="@color/colorSpinner"
+        android:textSize="50sp"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When you play, play hard!"
+        android:fontFamily="@font/fredoka"
+        android:layout_marginLeft="30sp"
+        android:textColor="@color/colorTeamBlock" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WIN"
+        android:textColor="@color/colorDurationBlock"
+        android:paddingTop="50sp"
+        android:gravity="center"
+        android:fontFamily="@font/fredoka"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/winner_team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="{{GROUP NAME}}"
+        android:fontFamily="@font/fredoka"
+        android:textColor="@color/colorTeamBlock"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:padding="20sp" />
+
+    <Button
+        android:id="@+id/to_home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/word_block"
+        android:fontFamily="@font/fredoka"
+        android:textSize="50sp"
+        android:padding="10sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameAmActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/fredoka"
+        android:textColor="@color/colorSpinner"
+        android:textSize="50sp"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When you play, play hard!"
+        android:fontFamily="@font/fredoka"
+        android:layout_marginLeft="30sp"
+        android:textColor="@color/colorTeamBlock" />
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:fontFamily="@font/fredoka"
+        android:textColor="@color/colorSpinner"
+        android:textSize="40sp"
+        android:text="Group Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/word_block"
+        android:padding="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:fontFamily="@font/fredoka"
+            android:textColor="@color/colorTeamBlock"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageButton
+            android:src="@drawable/ic_wrong"
+            android:id="@+id/wrong_answer"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:gravity="left"
+            android:background="@color/colorDurationBlock"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:src="@drawable/ic_right"
+            android:id="@+id/right_answer"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:gravity="right"
+            android:background="@color/colorTeamBlock"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:fontFamily="@font/fredoka"
+        android:textSize="100sp"
+        android:gravity="center"
+        android:text="50" />
+
+    <Button
+        android:id="@+id/ready_btn"
+        android:layout_width="wrap_content"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:layout_marginTop="30sp"
+        android:layout_height="wrap_content"
+        android:text="Ready"
+        android:fontFamily="@font/fredoka"
+        android:textSize="20sp"
+        android:background="@drawable/next_button"
+        android:textColor="@color/colorBackground"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        />
+
+</LinearLayout>
